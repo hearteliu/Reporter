@@ -1,0 +1,6 @@
+D:\interviuri\IFORCE\Reporter\Reporter.Extensions\bin\Debug\Reporter.Extensions.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Extensions\bin\Debug\Reporter.Extensions.pdb
+D:\interviuri\IFORCE\Reporter\Reporter.Extensions\obj\Debug\Reporter.Extensions.csprojAssemblyReference.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Extensions\obj\Debug\Reporter.Extensions.csproj.CoreCompileInputs.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Extensions\obj\Debug\Reporter.Extensions.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Extensions\obj\Debug\Reporter.Extensions.pdb

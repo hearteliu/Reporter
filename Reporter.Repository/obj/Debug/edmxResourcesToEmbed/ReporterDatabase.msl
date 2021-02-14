@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReporterModelStoreContainer" CdmEntityContainer="ReporterEntities">
+    <EntitySetMapping Name="CustomerInformations">
+      <EntityTypeMapping TypeName="ReporterModel.CustomerInformation">
+        <MappingFragment StoreEntitySet="CustomerInformation">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Forename" ColumnName="Forename" />
+          <ScalarProperty Name="Surename" ColumnName="Surename" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleInformations">
+      <EntityTypeMapping TypeName="ReporterModel.VehicleInformation">
+        <MappingFragment StoreEntitySet="VehicleInformation">
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="EngineSize" ColumnName="EngineSize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CustomersAndVehicles" TypeName="ReporterModel.CustomersAndVehicles" StoreEntitySet="CustomersAndVehicles">
+      <EndProperty Name="CustomerInformation">
+        <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+      </EndProperty>
+      <EndProperty Name="VehicleInformation">
+        <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

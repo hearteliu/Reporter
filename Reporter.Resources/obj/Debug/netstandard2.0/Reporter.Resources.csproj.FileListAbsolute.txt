@@ -1,0 +1,9 @@
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\bin\Debug\netstandard2.0\Reporter.Resources.deps.json
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\bin\Debug\netstandard2.0\Reporter.Resources.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\bin\Debug\netstandard2.0\Reporter.Resources.pdb
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\obj\Debug\netstandard2.0\Reporter.Resources.csprojAssemblyReference.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\obj\Debug\netstandard2.0\Reporter.Resources.AssemblyInfoInputs.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\obj\Debug\netstandard2.0\Reporter.Resources.AssemblyInfo.cs
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\obj\Debug\netstandard2.0\Reporter.Resources.csproj.CoreCompileInputs.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\obj\Debug\netstandard2.0\Reporter.Resources.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Resources\obj\Debug\netstandard2.0\Reporter.Resources.pdb

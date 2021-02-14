@@ -1,0 +1,59 @@
+2021-02-14 16:33:35,850 [6] ERROR Reporter.Services.DatabaseService [(null)] - Input string was not in a correct format.Couldn't store <CustomerId> in CustomerId Column.  Expected type is Int32.
+2021-02-14 16:33:35,893 [6] ERROR Reporter.Controllers.HomeController [(null)] - Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type.
+2021-02-14 16:34:17,007 [6] ERROR Reporter.Services.DatabaseService [(null)] - Input string was not in a correct format.Couldn't store <CustomerId> in CustomerId Column.  Expected type is Int32.
+2021-02-14 16:34:21,889 [6] ERROR Reporter.Controllers.HomeController [(null)] - Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type.
+2021-02-14 16:35:06,976 [6] ERROR Reporter.Services.DatabaseService [(null)] - Input string was not in a correct format.Couldn't store <CustomerId> in CustomerId Column.  Expected type is Int32.
+2021-02-14 16:35:40,605 [6] ERROR Reporter.Controllers.HomeController [(null)] - Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type.
+2021-02-14 16:35:51,042 [6] ERROR Reporter.Services.DatabaseService [(null)] - Input string was not in a correct format.Couldn't store <CustomerId> in CustomerId Column.  Expected type is Int32.
+2021-02-14 16:36:06,594 [6] ERROR Reporter.Controllers.HomeController [(null)] - Cannot cast DBNull.Value to type 'System.Int32'. Please use a nullable type.
+2021-02-14 16:36:13,843 [6] ERROR Reporter.Services.DatabaseService [(null)] - Input string was not in a correct format.Couldn't store <CustomerId> in CustomerId Column.  Expected type is Int32.
+2021-02-14 16:45:43,604 [7] ERROR Reporter.Services.DatabaseService [(null)] - Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+2021-02-14 18:39:15,369 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:39:20,467 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:39:51,861 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,602 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,626 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,645 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,666 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,687 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,706 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,727 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,748 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,779 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,804 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,831 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,859 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,888 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,916 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,941 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,967 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:14,994 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:15,023 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:15,057 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:15,092 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:40:15,125 [14] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,573 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,600 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,619 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,638 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,657 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,677 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,700 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,721 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,742 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,765 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,794 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,836 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,875 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,916 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,950 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:13,985 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,011 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,045 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,082 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,119 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,150 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,182 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,210 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:42:14,240 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.
+2021-02-14 18:48:54,385 [6] ERROR Reporter.Services.DatabaseService [(null)] - An error occurred while updating the entries. See the inner exception for details.

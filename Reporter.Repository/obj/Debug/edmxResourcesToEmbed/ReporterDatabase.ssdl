@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReporterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CustomerInformation">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="Forename" Type="nvarchar" MaxLength="50" />
+    <Property Name="Surename" Type="nvarchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="date" />
+  </EntityType>
+  <EntityType Name="CustomersAndVehicles">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+      <PropertyRef Name="VehicleId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VehicleInformation">
+    <Key>
+      <PropertyRef Name="VehicleId" />
+    </Key>
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Model" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegistrationNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegistrationDate" Type="date" />
+    <Property Name="EngineSize" Type="int" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_CustomersAndVehicles_CustomersAndVehicles">
+    <End Role="CustomerInformation" Type="Self.CustomerInformation" Multiplicity="1" />
+    <End Role="CustomersAndVehicles" Type="Self.CustomersAndVehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CustomerInformation">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="CustomersAndVehicles">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ReporterModelStoreContainer">
+    <EntitySet Name="CustomerInformation" EntityType="Self.CustomerInformation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomersAndVehicles" EntityType="Self.CustomersAndVehicles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleInformation" EntityType="Self.VehicleInformation" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_CustomersAndVehicles_CustomersAndVehicles" Association="Self.FK_CustomersAndVehicles_CustomersAndVehicles">
+      <End Role="CustomerInformation" EntitySet="CustomerInformation" />
+      <End Role="CustomersAndVehicles" EntitySet="CustomersAndVehicles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ReporterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CustomerInformation">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="Forename" Type="nvarchar" MaxLength="50" />
+          <Property Name="Surename" Type="nvarchar" MaxLength="50" />
+          <Property Name="DateOfBirth" Type="date" />
+        </EntityType>
+        <EntityType Name="CustomersAndVehicles">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+            <PropertyRef Name="VehicleId" />
+          </Key>
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="VehicleId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VehicleInformation">
+          <Key>
+            <PropertyRef Name="VehicleId" />
+          </Key>
+          <Property Name="VehicleId" Type="int" Nullable="false" />
+          <Property Name="Manufacturer" Type="nvarchar" MaxLength="50" />
+          <Property Name="Model" Type="nvarchar" MaxLength="50" />
+          <Property Name="RegistrationNumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RegistrationDate" Type="date" />
+          <Property Name="EngineSize" Type="int" />
+          <Property Name="InteriorColor" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_CustomersAndVehicles_CustomersAndVehicles">
+          <End Role="CustomerInformation" Type="Self.CustomerInformation" Multiplicity="1" />
+          <End Role="CustomersAndVehicles" Type="Self.CustomersAndVehicles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CustomerInformation">
+              <PropertyRef Name="CustomerId" />
+            </Principal>
+            <Dependent Role="CustomersAndVehicles">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ReporterModelStoreContainer">
+          <EntitySet Name="CustomerInformation" EntityType="Self.CustomerInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CustomersAndVehicles" EntityType="Self.CustomersAndVehicles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VehicleInformation" EntityType="Self.VehicleInformation" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CustomersAndVehicles_CustomersAndVehicles" Association="Self.FK_CustomersAndVehicles_CustomersAndVehicles">
+            <End Role="CustomerInformation" EntitySet="CustomerInformation" />
+            <End Role="CustomersAndVehicles" EntitySet="CustomersAndVehicles" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ReporterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CustomerInformation">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Forename" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Surename" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DateOfBirth" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="VehicleInformations" Relationship="Self.CustomersAndVehicles" FromRole="CustomerInformation" ToRole="VehicleInformation" />
+        </EntityType>
+        <EntityType Name="VehicleInformation">
+          <Key>
+            <PropertyRef Name="VehicleId" />
+          </Key>
+          <Property Name="VehicleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Manufacturer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RegistrationNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RegistrationDate" Type="DateTime" Precision="0" />
+          <Property Name="EngineSize" Type="Int32" />
+          <NavigationProperty Name="CustomerInformations" Relationship="Self.CustomersAndVehicles" FromRole="VehicleInformation" ToRole="CustomerInformation" />
+          <Property Name="InteriorColor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="CustomersAndVehicles">
+          <End Role="CustomerInformation" Type="Self.CustomerInformation" Multiplicity="*" />
+          <End Role="VehicleInformation" Type="Self.VehicleInformation" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="ReporterEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CustomerInformations" EntityType="Self.CustomerInformation" />
+          <EntitySet Name="VehicleInformations" EntityType="Self.VehicleInformation" />
+          <AssociationSet Name="CustomersAndVehicles" Association="Self.CustomersAndVehicles">
+            <End Role="CustomerInformation" EntitySet="CustomerInformations" />
+            <End Role="VehicleInformation" EntitySet="VehicleInformations" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ReporterModelStoreContainer" CdmEntityContainer="ReporterEntities">
+          <EntitySetMapping Name="CustomerInformations">
+            <EntityTypeMapping TypeName="ReporterModel.CustomerInformation">
+              <MappingFragment StoreEntitySet="CustomerInformation">
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="Forename" ColumnName="Forename" />
+                <ScalarProperty Name="Surename" ColumnName="Surename" />
+                <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VehicleInformations">
+            <EntityTypeMapping TypeName="ReporterModel.VehicleInformation">
+              <MappingFragment StoreEntitySet="VehicleInformation">
+                <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+                <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+                <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+                <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+                <ScalarProperty Name="EngineSize" ColumnName="EngineSize" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="CustomersAndVehicles" TypeName="ReporterModel.CustomersAndVehicles" StoreEntitySet="CustomersAndVehicles">
+            <EndProperty Name="CustomerInformation">
+              <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+            </EndProperty>
+            <EndProperty Name="VehicleInformation">
+              <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

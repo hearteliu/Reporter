@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7wbAvNDXlb3toZ13xwTJaNfiog9SkOjQrtC3UqWL2mW+o3mQdbB70bviltm9W5QrMJp6w/Im/KwT8ftM59ngZA==",
+  "success": true,
+  "projectFilePath": "D:\\interviuri\\IFORCE\\Reporter\\Reporter.Resources\\Reporter.Resources.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emanu\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\emanu\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

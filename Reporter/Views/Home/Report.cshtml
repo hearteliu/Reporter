@@ -1,0 +1,122 @@
+﻿@using Reporter.Extensions
+@model Reporter.Models.ReportPageViewModel
+
+<div class="row">
+    <h1>@Reporter.Resources.Constants.Labels.ReportLabel</h1>
+</div>
+<div class="row">
+    <div class="col-md-1">
+        <label>@Reporter.Resources.Constants.ColumnNames.Forename</label>
+    </div>
+    <div class="col-md-1">
+        <label>@Reporter.Resources.Constants.ColumnNames.Surname</label>
+    </div>
+    <div class="col-md-2">
+        <label>@Reporter.Resources.Constants.ColumnNames.DateOfBirth</label>
+    </div>
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-2">
+                <label>@Reporter.Resources.Constants.ColumnNames.Model</label>
+            </div>
+            <div class="col-md-2">
+                <label>@Reporter.Resources.Constants.ColumnNames.Manufacturer</label>
+            </div>
+            <div class="col-md-2">
+                <label>@Reporter.Resources.Constants.ColumnNames.RegistrationNumber</label>
+            </div>
+            <div class="col-md-2">
+                <label>@Reporter.Resources.Constants.ColumnNames.RegistrationDate</label>
+            </div>
+            <div class="col-md-2">
+                <label>@Reporter.Resources.Constants.ColumnNames.EngineSize</label>
+            </div>
+            <div class="col-md-2">
+                <label>@Reporter.Resources.Constants.ColumnNames.InteriorColor</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+@foreach (var customer in Model.Customers)
+{
+    <div class="row customer-row @(customer.DateOfBirth.IsBetweenYearsOld(20, 30) ? "young-customer" : "")">
+        <div class="col-md-1">
+            <label>@customer.Forename</label>
+        </div>
+        <div class="col-md-1">
+            <label>@customer.Surname</label>
+        </div>
+        <div class="col-md-2">
+            <label>@customer.DateOfBirth</label>
+        </div>
+        <div class="col-md-8">
+            @foreach (var vehicle in customer.VehiclesOwned)
+            {
+                <div class="row vehicle-row @(vehicle.RegistrationDate.IsOlderThan(2010, 1, 1) ? "old-car" : "")">
+                    <div class="col-md-2">
+                        <label>@vehicle.Model</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>@vehicle.Manufacturer</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>@vehicle.RegistrationNumber</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>@vehicle.RegistrationDate</label>
+                    </div>
+                    <div class="col-md-2 engine-size-container @(vehicle.EngineSize > 1100 ? "big-engine" : "")">
+                        <label>@vehicle.EngineSize</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label>@vehicle.InteriorColor</label>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+<div class="row">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>@Reporter.Resources.Constants.Labels.LegendLabel:</h2>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12 red-background">
+                <label>
+                    @Reporter.Resources.Constants.Labels.BigEngineLabel
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12 yellow-background">
+                <label>
+                    @Reporter.Resources.Constants.Labels.YoungCustomerLabel
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-12 green-background">
+                <label>
+                    @Reporter.Resources.Constants.Labels.OldVehicleLabel
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <a href="@Url.Action(Reporter.Resources.Constants.ActionNames.IndexActionName, Reporter.Resources.Constants.ControllerNames.HomeController)">
+            @Reporter.Resources.Constants.Labels.UploadNewCsvLabel
+        </a>
+    </div>
+</div>

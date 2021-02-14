@@ -1,0 +1,14 @@
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\Reporter.Interfaces.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\Reporter.Interfaces.pdb
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\obj\Debug\Reporter.Interfaces.csprojAssemblyReference.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\obj\Debug\Reporter.Interfaces.csproj.CoreCompileInputs.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\obj\Debug\Reporter.Interfaces.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\obj\Debug\Reporter.Interfaces.pdb
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\Reporter.Models.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\Reporter.Models.pdb
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\obj\Debug\Reporter.Interfaces.csproj.CopyComplete
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\Reporter.Repository.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\EntityFramework.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\Reporter.Repository.pdb
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\Reporter.Repository.dll.config
+D:\interviuri\IFORCE\Reporter\Reporter.Interfaces\bin\Debug\EntityFramework.xml

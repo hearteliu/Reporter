@@ -1,0 +1,17 @@
+﻿@model Reporter.Models.HomePageViewModel
+<div>
+    @using (Html.BeginForm("Index",
+                            "Home",
+                            FormMethod.Post,
+                            new { enctype = "multipart/form-data" }))
+    {
+        <label for="file">@Reporter.Resources.Constants.Labels.UploadCsvLabel:</label>
+
+        @Html.TextBoxFor(m => m.File, new { type = "file", accept = ".csv" })
+        @Html.ValidationMessageFor(m => m.File)
+
+        <br />
+        <input type="submit" value="@Reporter.Resources.Constants.Labels.ImportFileLabel" />
+
+    }
+</div>

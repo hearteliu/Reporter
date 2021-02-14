@@ -1,0 +1,12 @@
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\obj\Debug\Reporter.Repository.csprojAssemblyReference.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\obj\Debug\Reporter.Repository.csproj.CoreCompileInputs.cache
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\bin\Debug\Reporter.Repository.dll.config
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\bin\Debug\Reporter.Repository.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\bin\Debug\Reporter.Repository.pdb
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\bin\Debug\EntityFramework.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\bin\Debug\EntityFramework.xml
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\obj\Debug\Reporter.Repository.csproj.CopyComplete
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\obj\Debug\Reporter.Repository.dll
+D:\interviuri\IFORCE\Reporter\Reporter.Repository\obj\Debug\Reporter.Repository.pdb
